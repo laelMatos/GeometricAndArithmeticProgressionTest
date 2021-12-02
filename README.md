@@ -5,6 +5,7 @@
 ```
         public static bool IsGeometric(int[] arr)
         {
+            //S[n] = (a[0] * (r^n - 1))/r - 1
             var Sn = arr.Sum(x => x);
             var r = arr[1] - arr[0];
             int n = arr.Length;
@@ -13,6 +14,7 @@
         }
         public static bool IsArithmetic(int[] arr)
         {
+            //S[n] = ((a[0] + a[n])+n)/2
             var Sn = arr.Sum(x => x);
             var r = arr[1] - arr[0];
             int n = arr.Length;

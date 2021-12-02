@@ -2,6 +2,7 @@
 # Geometric And Arithmetic Progression Test
 ## Execution speed test of each method type
 ![This is an image](https://github.com/laelMatos/GeometricAndArithmeticProgressionTest/blob/master/TestSpeed.JPG)
+>## Slow
 ```
         public static bool IsGeometric(int[] arr)
         {
@@ -21,7 +22,9 @@
 
             return Sn == ((arr[0] + arr[n-1] )*n) / 2;
         }
-
+```
+>## Fast
+```
         public static bool IsGeometricFast(int[] arr)
         {
             if (arr.Length < 2)
